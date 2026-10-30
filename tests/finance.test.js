@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {ratio,cagr,derived,sourceAudit,scenario} from '../site/lib.js';
+const data=JSON.parse(fs.readFileSync(new URL('../site/data.json',import.meta.url)));
+test('undefined ratios do not silently become meaningful values',()=>{assert.equal(ratio(10,0),null);assert.equal(cagr(100,110,0),null);assert.ok(Math.abs(cagr(100,121,2)-.1)<1e-12);});
+test('scenario compounds EPS and multiplies by the supplied multiple',()=>{const result=scenario(100,.1,20,2);assert.ok(Math.abs(result[1].eps-121)<1e-10);assert.ok(Math.abs(result[1].hypothetical_price-2420)<1e-9);});
+test('invalid assumptions cannot produce an accepted scenario',()=>{for(const values of [[0,.1,20,2],[100,-1,20,2],[100,.1,201,2],[100,.1,20,1.5],[100,NaN,20,2]])assert.throws(()=>scenario(...values));});
+test('historical reported figures end before all assignment projections',()=>{assert.equal(data.rows.filter(row=>row.kind==='historical_reported').at(-1).year,2020);assert.deepEqual(data.rows.filter(row=>row.kind==='assignment_projection').map(row=>row.year),[2021,2022,2023]);});
+test('original projected ratios are flagged rather than treated as correct',()=>{const audit=sourceAudit(data.rows);assert.ok(audit.every(row=>row.inconsistent));assert.ok(Math.abs(audit[0].calculated_opm-18.1)<.01);assert.equal(audit[0].reported_opm,20.6);});
+test('derived ratios use the same row line items and source precision',()=>{const row=derived(data.rows.find(row=>row.year===2020));assert.equal(row.eps,306.4464);assert.ok(Math.abs(row.operating_margin-18.1)<.01);assert.ok(Math.abs(row.calculated_pe-55.36)<.01);});
