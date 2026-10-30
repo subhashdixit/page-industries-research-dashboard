@@ -1,5 +1,7 @@
 # Page Industries Historical Research Lab
 
+**Live application:** [Open Page Industries Research Dashboard](https://subhashdixit.github.io/page-industries-research-dashboard/) · [Source code](https://github.com/subhashdixit/page-industries-research-dashboard)
+
 A browser dashboard that turns an existing financial-analysis assignment into a transparent historical research tool. Read the 2015–2020 figures, distinguish the assignment's 2021–2023 projections, audit inconsistent ratios and try a clearly hypothetical EPS/P-E scenario.
 
 This is **not a live stock-price service, a verified company filing database or an investment recommendation**. Its source is the original report PDFs retained in [Part-1](Part-1) and [Part-2](Part-2).
