@@ -1,0 +1,129 @@
+{
+  "source": {
+    "report": "Original March 2021 classroom assignment, Part-2 PDF",
+    "sha256": "bf10af697a5b2080d94122445460ffb1f45632708ac2e6d2215c107e946be145",
+    "pages": [
+      12,
+      13
+    ],
+    "transcription": "Manually transcribed and visually verified against rendered original PDF pages. EPS precision for 2016\u20132020 uses the dedicated page-12 table.",
+    "units": "Sales/profit are retained in report-scale units; their monetary scale is not specified in the source table. EPS and price use matching per-share units.",
+    "historical_end": 2020,
+    "projection_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "warning": "Values are as reported in a historical assignment, not independently audited current financial data."
+  },
+  "rows": [
+    {
+      "year": 2015,
+      "kind": "historical_reported",
+      "sales": 1543.44,
+      "expenses": 1223.03,
+      "operating_profit": 320.41,
+      "net_profit": 196.02,
+      "eps": 175.02,
+      "price": 13731.05,
+      "reported_pe": 78.46,
+      "reported_opm": 20.76
+    },
+    {
+      "year": 2016,
+      "kind": "historical_reported",
+      "sales": 1795.6,
+      "expenses": 1419.12,
+      "operating_profit": 376.48,
+      "net_profit": 231.52,
+      "eps": 206.7143,
+      "price": 12116.9,
+      "reported_pe": 58.62,
+      "reported_opm": 20.97
+    },
+    {
+      "year": 2017,
+      "kind": "historical_reported",
+      "sales": 2128.53,
+      "expenses": 1713.79,
+      "operating_profit": 414.74,
+      "net_profit": 266.28,
+      "eps": 237.75,
+      "price": 14620.8,
+      "reported_pe": 61.5,
+      "reported_opm": 19.48
+    },
+    {
+      "year": 2018,
+      "kind": "historical_reported",
+      "sales": 2551.37,
+      "expenses": 2009.72,
+      "operating_profit": 541.65,
+      "net_profit": 346.98,
+      "eps": 309.8036,
+      "price": 22684.55,
+      "reported_pe": 73.22,
+      "reported_opm": 21.23
+    },
+    {
+      "year": 2019,
+      "kind": "historical_reported",
+      "sales": 2852.2,
+      "expenses": 2234.32,
+      "operating_profit": 617.88,
+      "net_profit": 393.94,
+      "eps": 351.7321,
+      "price": 24972.25,
+      "reported_pe": 71.0,
+      "reported_opm": 21.66
+    },
+    {
+      "year": 2020,
+      "kind": "historical_reported",
+      "sales": 2945.42,
+      "expenses": 2412.31,
+      "operating_profit": 533.11,
+      "net_profit": 343.22,
+      "eps": 306.4464,
+      "price": 16963.5,
+      "reported_pe": 55.36,
+      "reported_opm": 18.1
+    },
+    {
+      "year": 2021,
+      "kind": "assignment_projection",
+      "sales": 3351.89,
+      "expenses": 2745.21,
+      "operating_profit": 606.68,
+      "net_profit": 390.58,
+      "eps": 348.74,
+      "price": 19304.46,
+      "reported_pe": 62.99,
+      "reported_opm": 20.6
+    },
+    {
+      "year": 2022,
+      "kind": "assignment_projection",
+      "sales": 3814.45,
+      "expenses": 3124.05,
+      "operating_profit": 690.4,
+      "net_profit": 444.49,
+      "eps": 396.86,
+      "price": 21968.48,
+      "reported_pe": 71.69,
+      "reported_opm": 23.44
+    },
+    {
+      "year": 2023,
+      "kind": "assignment_projection",
+      "sales": 4340.84,
+      "expenses": 3555.17,
+      "operating_profit": 785.68,
+      "net_profit": 505.82,
+      "eps": 451.63,
+      "price": 25000.13,
+      "reported_pe": 81.58,
+      "reported_opm": 26.67
+    }
+  ]
+}
