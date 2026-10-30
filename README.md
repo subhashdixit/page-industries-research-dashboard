@@ -6,6 +6,8 @@ A browser dashboard that turns an existing financial-analysis assignment into a 
 
 This is **not a live stock-price service, a verified company filing database or an investment recommendation**. Its source is the original report PDFs retained in [Part-1](Part-1) and [Part-2](Part-2).
 
+![Deployed application](docs/images/application.png)
+
 ## Start here
 
 1. Read the historical sales, operating profit, EPS and source-price charts.
@@ -60,7 +62,7 @@ flowchart LR
 
 ## Why the ratio audit is part of the app
 
-Some projected ratios in the assignment do not agree with its underlying figures. For example, 2021 projected operating profit `606.68` divided by sales `3351.89` implies about **18.10%**, while the source prints **20.60%**. Price `19304.46` divided by EPS `348.74` implies approximately **55.36**, while the source prints **62.99**.
+Some projected ratios in the assignment do not agree with its underlying figures. For example, 2021 projected operating profit `606.68` divided by sales `3351.89` implies about **18.10%**, while the source prints **20.60%**. Price `19304.46` divided by EPS `348.74` implies approximately **55.35**, while the source prints **62.99**.
 
 The app preserves the source entries and shows the recalculation side by side. It does not silently “correct” the PDF or treat an assignment inconsistency as a claim about the company's audited accounts. Rounding tolerance is applied to the operating-statement identity, and missing denominators produce unavailable ratios rather than fabricated zeros.
 
